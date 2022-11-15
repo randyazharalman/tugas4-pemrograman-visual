@@ -26,11 +26,13 @@ public class Tugas4 {
             res = stmt.executeQuery(sql);
             
             while(res.next()){
+                System.out.println();
                 System.out.println("ID Tempat Wisata: " + res.getInt("id_tempat_wisata"));
                 System.out.println("Nama Tempat Wisata: " + res.getString("nama_tempat_wisata"));
                 System.out.println("Alamat: " + res.getString("alamat"));
                 System.out.println("Nomor Telepon: " + res.getString("no_telepon"));
                 System.out.println("Keterangan: " + res.getString("keterangan"));
+                System.out.println();
             }
              stmt.close();
             con.close();
